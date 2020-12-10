@@ -1,0 +1,21 @@
+body {
+    background-color: #AEB8FE;
+    display: flex;
+}
+
+.dice {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: #EFE5DC;
+    margin: 100px;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: black;
+    margin: 35px;
+    
+}
