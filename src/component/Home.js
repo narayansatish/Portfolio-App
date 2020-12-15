@@ -1,10 +1,13 @@
 import React from 'react';
+
+import { Button } from 'react-bootstrap'; 
+
 import ReactDOM from 'react-dom';
 
-import { Link } from 'react-router-dom';
+import { Link,Route, Switch,BrowserRouter   } from 'react-router-dom';
 
-import { BrowserRouter } from 'react-router-dom';
 import {personal_details as info} from './Data/personal_details';
+
 function Home()
 {   function printtech(item)
         {
@@ -19,6 +22,8 @@ function Home()
         temp=<li><a href={value[1]}>{value[0]}</a></li>;
         media.push(temp);
       }
+    
+    
     let image=<img src={info.details.pic}></img>;
     let Homebar=(
                 <ul>
