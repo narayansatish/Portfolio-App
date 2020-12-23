@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from 'react-bootstrap'; 
+import { Navbar, NavItem, NavDropdown, MenuItem, Nav, Row,Col,Container } from 'react-bootstrap';
 
 import ReactDOM from 'react-dom';
 
@@ -32,9 +32,14 @@ function Home()
                 </ul>
                 
                 );
-    return (    <div>
-                    {Homebar}
-                    <h2>{info.details.name} {image}</h2>
+    return (    <Container fluid style={{ backgroundColor: '#f5f7f6' ,color:"#c46666",display: 'flex',flexDirection: 'column',  justifyContent:'center', alignItems:'center',alignItems:'center'}}   >
+                    <div className="row">
+                    <div className="col-xs-8">
+                        <h2>{info.details.name} </h2></div>
+                    <div className="col-xs-4"> {image}</div>
+                    </div>
+                   
+                    
                     <article>
                     {info.details.bio}
                     </article>
@@ -42,7 +47,7 @@ function Home()
                     <p>{printtech(info.details.technology)}</p>
                     <h1> connect with me</h1>
                     {media}
-                </div>
+                    </Container>
             );
         }
     export default Home;

@@ -26,7 +26,7 @@ function Project()
             </div>) ;
         
         return (    <div>
-                        {Projectbar}
+                       
                         <h2>Projects By Satish Narayan</h2>
                      <div>{project}</div> 
                     </div>
