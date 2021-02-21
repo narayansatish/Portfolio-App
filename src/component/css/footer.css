@@ -1,0 +1,45 @@
+html {
+        margin: 0;
+        position: relative;
+        min-height: 100%;
+}
+
+body {
+        margin: 0;
+        
+        min-height: 100%;
+}
+#root {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+}
+
+footer {
+        background-color: indigo;
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        
+
+        color: white;
+        flex-direction: row;
+        font-size: 3rem;
+
+        width: 100%;
+        margin-top: auto;
+        align-self: flex-start;
+}
+.social {
+        padding-right: 6px;
+}
+@media only screen and (max-width: 600px) {
+        #navbar {
+                font-size: 16px;
+        }
+}
+@media only screen and (min-width: 600px) {
+        #navbar {
+                font-size: 24px;
+        }
+}

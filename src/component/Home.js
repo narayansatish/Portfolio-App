@@ -1,53 +1,87 @@
-import React from 'react';
+import React from "react";
 
-import { Navbar, NavItem, NavDropdown, MenuItem, Nav, Row,Col,Container } from 'react-bootstrap';
+import {
+    Navbar,
+    NavItem,
+    NavDropdown,
+    MenuItem,
+    Nav,
+    Row,
+    Col,
+    Container,
+    Image,
+} from "react-bootstrap";
 
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 
-import { Link,Route, Switch,BrowserRouter   } from 'react-router-dom';
+import { Link, Route, Switch, BrowserRouter } from "react-router-dom";
 
-import {personal_details as info} from './Data/personal_details';
+import { personal_details as info } from "./Data/personal_details";
+import "./css/Home.css";
 
-function Home()
-{   function printtech(item)
-        {
-            let str="";
-            for(let i=0;i<item.length;i++)
-                str=str+item[i]+",";
-            return str;
+function Home() {
+    function printtech(item) {
+        let str = [];
+        let colour = ["navy", "indigo", "pink", "orange", "red", "#eb8f34", "#ebdf34", "#34ebc6"];
+        for (let i = 0; i < item.length; i++) {
+            let sty = { backgroundColor: colour[i], }
+
+            str.push(<h4 className="technology" style={sty}>{item[i]}</h4>);
         }
-    let media=[],temp;
+
+        return str;
+    }
+    let media = [],
+        temp;
     for (let key in info.SocialMedia) {
         let value = info.SocialMedia[key];
-        temp=<li><a href={value[1]}>{value[0]}</a></li>;
+        temp = (
+            <li>
+                <a href={value[1]}>{value[0]}</a>
+            </li>
+        );
         media.push(temp);
-      }
-    
-    
-    let image=<img src={info.details.pic}></img>;
-    let Homebar=(
-                <ul>
-                    <li><Link to="/Blog">Blog</Link></li>
-                    <li><Link to="/Project">Project</Link></li>
-                </ul>
-                
-                );
-    return (    <Container fluid style={{ backgroundColor: '#f5f7f6' ,color:"#c46666",display: 'flex',flexDirection: 'column',  justifyContent:'center', alignItems:'center',alignItems:'center'}}   >
-                    <div className="row">
-                    <div className="col-xs-8">
-                        <h2>{info.details.name} </h2></div>
-                    <div className="col-xs-4"> {image}</div>
-                    </div>
-                   
-                    
-                    <article>
-                    {info.details.bio}
-                    </article>
-                    <h1>Technology</h1>
-                    <p>{printtech(info.details.technology)}</p>
-                    <h1> connect with me</h1>
-                    {media}
-                    </Container>
-            );
-        }
-    export default Home;
+    }
+
+    let image = (
+        <Image
+            style={{ width: "100%" }}
+            id="satishImage"
+            src="https://i.ibb.co/tBVNb7b/profile-pic.jpg"
+            roundedCircle
+        />
+    );
+
+    return (
+        <div>
+
+            <div style={{ display: "flex" }} id="mainContent">
+
+                <Image
+                    id="satishImage"
+                    src="https://i.ibb.co/tBVNb7b/profile-pic.jpg"
+                    roundedCircle
+                />
+
+
+                <div id="info">
+
+
+
+                    <h1 className="intro" >👋 Hey, I'm Satish</h1>
+                    <h3 className="description">I am a Problem Solver,working on Front-End Development.</h3>
+                </div>
+            </div>
+
+            <div>
+                <div id="technology">
+                    <h1 className="tech" >Technology</h1>
+                    <div id="language">{printtech(info.details.technology)}</div>
+
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Home;

@@ -9,7 +9,7 @@ var personal_details = {
     name: "Satish Narayan",
     bio: "I am Final Year CS UG @IIESTS, Learning full-stack development @FrontBench, Incoming Software developer @JIO.",
     pic: "'./Data/Satish_image.jpg",
-    technology: ["C++", "JavaScript", "Html", "CSS", "ReactJs", "Sql"]
+    technology: ["JavaScript", "Html", "CSS", "ReactJs", "Sql", "Bootstrap", "Git", "C++"]
   },
   SocialMedia: {
     1: ["Twitter", "https://twitter.com/NarayanSatish10"],

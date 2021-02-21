@@ -1,0 +1,138 @@
+@media only screen and (max-width: 600px) {
+
+   #mainContent{
+       flex-direction: column;
+   }
+   #satishImage{
+       width: 60%;
+       align-self: center;
+       margin-top: 3rem;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 1rem;
+        background-color:indigo;
+        border: 3px solid indigo;
+                      
+
+   }
+   #info{
+       width: 100%;
+       font-size: 20px;
+   
+       margin-top: 2px;
+       background-color:indigo;
+       color:white;
+       border: 3px solid indigo;
+       padding: 1rem;
+       
+   }
+    #language {
+        display: flex;
+        width: 80%;
+        margin-right: 10px;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        margin-top: 2rem;
+    }
+     #technology {
+         margin-left: 0%;
+         margin-top: 4rem;
+          background-color: "indigo";
+          display: "inline-block";
+          color: "white";
+          padding: "0.3rem";
+          
+
+     }
+     .technology{
+         padding: 0.7rem;
+         color: white;
+         margin-right: 5%;
+         width: 45%;
+         font-size: 16px;
+     }
+     .intro {
+         font-size: 30px;
+     }
+     .description{
+         font-size: 20px;
+         padding: 0.5rem;
+     }
+     .tech{
+         color: white;
+         background-color: indigo;
+         display: flex;
+         justify-content: center;
+         padding: 0.5rem;
+         font-size: 25px;
+         
+        
+
+     }
+}
+@media only screen and (min-width: 600px){
+    .tech{
+        font-size: 35px;
+color: white;
+background-color: indigo;
+display: inline;
+padding: 0.5rem;
+    }
+    .description {
+        font-size: 30px;
+        padding: 0.2rem;
+    }
+    .intro{
+font-size: 50px;
+    }
+
+    .technology {
+        padding: 0.7rem;
+        color: white;
+        margin-right: 5%;
+        width: 20%;
+    }
+    #mainContent {
+        flex-direction: row;
+        margin-top: 10rem;
+        align-items: center;
+        
+    }
+    #satishImage {
+        width: 10%;
+        align-self: flex-start;
+        background: indigo;
+        border: 3px solid indigo;
+        margin-left: 13%;
+         
+    }
+    #info {
+        width: 60%;
+        font-size: 32px;
+        margin-left: 5%;
+        margin-top: 5px;
+        background-color: indigo;
+        color: white;
+        border: 3px solid indigo;
+        padding: 2rem;
+
+    }
+    #technology{
+        margin-left: 13%;
+        margin-top: 8rem;
+        background-color: "indigo";
+        display: "inline-block";
+        color: "white";
+        padding: "0.5rem";
+
+    }
+    #language{
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-left: 14%;
+        margin-top: 2rem;
+    }
+
+}
